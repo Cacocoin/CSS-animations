@@ -1,0 +1,124 @@
+.long-box{
+    height:800px;
+    width:74%;
+    position:relative;
+    left:12.5%;
+    padding:1.7%;
+}
+
+.anim-container{
+  display: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+}
+
+.parallelogram-yellow {
+  position:absolute;
+  margin-right:17%;
+  width: 30%;
+  height: 15%;
+  transform: skew(20deg);
+  background: yellow;
+  visibility:hidden;
+  animation: motionYellow 8s infinite;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  }@keyframes motionYellow {
+    0%{right:0%;top: 2.2%; visibility:visible;}
+    50%{right:52.5%;}
+    100%{right:0%;top: 2.2%; visibility:visible;}
+  }
+
+.parallelogram-black {
+  position:absolute;
+  margin-left:17%;
+  width: 30%;
+  height: 15%;
+  transform: skew(-20deg);
+  background: #404040;
+  visibility:hidden;
+  animation: motionBlack 8s infinite;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  }@keyframes motionBlack {
+    0%{left:0%;top: 2.2%; visibility:visible;}
+    50%{left:52.5%;}
+    100%{left:0%;top: 2.2%; z-index:-1; visibility:visible;}
+  }
+
+.parallelogram-green {
+  position:absolute;
+  margin-right:11%;
+  width: 30%;
+  height: 15%;
+  transform: skew(20deg);
+  background: green;
+  visibility:hidden;
+  animation: motionGreen 8s infinite;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  }@keyframes motionGreen {
+    0%{right:4.8%;top: 17.3%; visibility:visible;}
+    50%{right:52.5%;}
+    100%{right:2%;top: 17.3%; z-index:20; visibility:visible;}
+  }
+
+.parallelogram-purple {
+  position:absolute;
+  margin-left:11%;
+  width: 30%;
+  height: 15%;
+  transform: skew(-20deg);
+  background: #800080;
+  visibility:hidden;
+  animation: motionPurple 8s infinite;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  }@keyframes motionPurple {
+    0%{left:4.8%;top: 17.3%; visibility:visible;}
+    50%{left:52.5%;}
+    100%{left:2%;top: 17.3%; visibility:visible;}
+  }
+
+.parallelogram-red {
+  position:absolute;
+  margin-right: 4.8%;
+  width: 30%;
+  height: 15%;
+  transform: skew(20deg);
+  background: red;
+  animation: motionRed 8s infinite;
+  animation-delay: 1.5s;
+  visibility:hidden;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  }@keyframes motionRed {
+    0%{right:4.8%;top: 32.4%; visibility:visible;}
+    50%{right:52.5%;}
+    100%{right:2%;top: 32.4%; visibility:visible;}
+  }
+
+.parallelogram-blue {
+  position:absolute;
+  margin-left:4.8%;
+  width: 30%;
+  height: 15%;
+  transform: skew(-20deg);
+  background: blue;
+  visibility:hidden;
+  animation: motionBlue 8s infinite;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  }@keyframes motionBlue {
+    0%{left:4.8%;top: 32.4%; visibility:visible;}
+    50%{left:52.5%;}
+    100%{left:2%;top: 32.4%; z-index:-1; visibility:visible;}
+  }
